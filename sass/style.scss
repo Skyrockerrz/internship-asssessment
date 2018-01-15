@@ -1,0 +1,157 @@
+/*--------------------------------------------------------------
+Bootstrap import, theme_mixins & variables of theme
+--------------------------------------------------------------*/
+@import "site/fonts";
+@import "site/variables";
+@import "theme_mixins";
+// Resets & base styles imports
+@import "site/resets";
+@import "site/styles";
+
+// Internet Explorer Breake point
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @import "site/ie";
+}
+
+@supports (-ms-accelerator:true) {
+  @import "site/ie";
+}
+
+/************** RESPONSIVE  ***************/
+@media all and (max-width: 1250px) {
+  .main-content {
+    .filters {
+      .top-filters {
+        .sort-by {
+          width: 23%;
+        }
+        .show {
+          width: 22%;
+        }
+        .th-icon {
+          width: 7%;
+        }
+        .list-icon {
+          width: 7%;
+        }
+        .filter {
+          width: 17%;
+        }
+        .refresh {
+          width: 7%;
+        }
+        .view-all {
+          width: 17%;
+        }
+      }
+      .left-filters-container {
+        width: 24.05%;
+      }
+    }
+
+    .pagination {
+      ul {
+        li {
+          height: 80px;
+          width: 9%;
+          &:nth-of-type(2) {
+            padding: 0 4%;
+          }
+          &:nth-of-type(8) {
+            padding: 0 4%;
+          }
+        }
+      }
+    }
+  }
+  .products-results {
+    .grid-container {
+      .product-container {
+       .text-content {
+         .old-price {
+           margin-right: 10px;
+         }
+         .new-price {
+           margin-left:0;
+         }
+       }
+        .buttons {
+          .add-to-cart {
+            button {
+              padding: 0 7px;
+            }
+          }
+          .amount {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  @import "site/tablet-styles";
+}
+
+@media all and (max-width: 860px) {
+  .main-footer {
+    .lower-footer {
+      .mobile-first-block {
+        .social-media {
+          padding-left: 10px;
+        }
+        .footer-logo {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 828px) {
+  .main-footer {
+    .lower-footer {
+      .mobile-first-block {
+        .social-media {
+          padding-left: 0;
+        }
+        .footer-logo {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  @import "site/mobile-styles";
+}
+
+
+@media all and (max-width: 600px) {
+  .main-content {
+
+    .pagination {
+      ul {
+        li {
+          width: 19.5%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .main-footer {
+    .lower-footer {
+      .mobile-first-block {
+        .contact-block {
+          padding-right:10px;
+          align-self: center;
+        }
+
+      }
+    }
+  }
+}

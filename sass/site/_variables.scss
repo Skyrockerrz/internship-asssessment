@@ -1,0 +1,56 @@
+// Theme colors
+$color-blue: #3853d8;
+$darker-blue : #0021c4;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #cccccc;
+$color-red: #ed1c24;
+$color-darkgray: #7a7a7a;
+$dark-text-color: #232323;
+$color-brown : #d3bcac;
+
+/* FONT WEIGHTS FAMILY ----------------------------*/
+$regular: 'Montserrat', sans-serif;
+
+/* FONTS & BODY -----------------------*/
+$font__main: 'Montserrat', sans-serif;
+$font__size: 15px;
+$color__text-main: #404040;
+$font__headings: $font__main;
+$font__line-height-body: 25px;
+$paragraph_padding_bottom: $font__line-height-body;
+$color__background-body: #fff;
+/*-------------------------------------*/
+
+/* BUTTON -----------------------------*/
+$button__height : 30px;
+$color__background-button: $color-blue;
+$color__background-button-hover: $color-blue - 60%;
+$color__button: $color-white;
+/*-------------------------------------*/
+
+/* INPUTS -----------------------------*/
+$color__border-input: #ccc;
+$color__border-input-focus: $color__background-button;
+$color__border_input_error: #cc442e;
+$color__input-placeholder: $color__text-main;
+$input__placeholder_font_size: $font__size;
+$input__placeholder_opacity: 0.5;
+$color__text-input: $color__text-main;
+$color__text-input-focus: $color__text-main;
+/*-------------------------------------*/
+
+/* LINKS ------------------------------*/
+$color__link: $dark-text-color;
+$color__link-hover: midnightblue;
+/*-------------------------------------*/
+
+
+
+/* OTHER ------------------------------*/
+$color__background-hr: #ccc;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #777;
+$center_width: 1200px;
+/*-------------------------------------*/
+
